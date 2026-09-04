@@ -1,3 +1,5 @@
+import profileImg from '../assets/profile.jpg';
+
 /**
  * Professional Portfolio Data Source for Abd El Rahman Mohamed Karkar
  * All information strictly derived from official CV & verified credentials.
@@ -13,8 +15,8 @@ export const personalInfo = {
   email: "abdelrahmankarkar7@gmail.com",
   phone: "+20 106 864 8652",
   location: "Egypt",
-  avatar: "/assets/profile.jpg",
-  cvPath: "/assets/Abd-El-Rahman-Karkar-CV.pdf",
+  avatar: profileImg,
+  cvPath: `${import.meta.env.BASE_URL}assets/Abd-El-Rahman-Karkar-CV.pdf`,
   socialLinks: {
     linkedin: "https://linkedin.com/in/abd-el-rhaman-karkar",
     github: "https://github.com/abdelrahmankarkar7-sys",
