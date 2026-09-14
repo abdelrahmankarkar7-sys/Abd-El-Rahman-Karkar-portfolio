@@ -1,20 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06B6D4" />
+    <linearGradient id="akGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="50%" stop-color="#06B6D4" />
       <stop offset="100%" stop-color="#3B82F6" />
     </linearGradient>
+    <linearGradient id="akAccent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="24" fill="#0B0F19"/>
-  <circle cx="50" cy="50" r="38" stroke="url(#grad)" stroke-width="4" fill="none" stroke-dasharray="160 20"/>
-  <!-- Neural / AI symbol -->
-  <path d="M35 40 L50 25 L65 40 L50 55 Z" fill="none" stroke="#06B6D4" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M35 60 L50 45 L65 60 L50 75 Z" fill="none" stroke="#3B82F6" stroke-width="3.5" stroke-linejoin="round"/>
-  <circle cx="50" cy="25" r="4" fill="#38BDF8"/>
-  <circle cx="35" cy="40" r="4" fill="#06B6D4"/>
-  <circle cx="65" cy="40" r="4" fill="#06B6D4"/>
-  <circle cx="50" cy="50" r="5" fill="#FFFFFF"/>
-  <circle cx="35" cy="60" r="4" fill="#3B82F6"/>
-  <circle cx="65" cy="60" r="4" fill="#3B82F6"/>
-  <circle cx="50" cy="75" r="4" fill="#6366F1"/>
+
+  <rect width="100" height="100" rx="26" fill="#0B0F19"/>
+  <rect x="2" y="2" width="96" height="96" rx="24" stroke="url(#akGrad)" stroke-width="3" stroke-opacity="0.5"/>
+
+  <!-- Monogram A -->
+  <path d="M 23 72 L 43 27" stroke="url(#akGrad)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 31 53 L 45 53" stroke="url(#akGrad)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Shared Spine (A right + K backbone) -->
+  <path d="M 43 27 L 43 72" stroke="url(#akGrad)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- K Branches -->
+  <path d="M 45 47 L 73 27" stroke="url(#akAccent)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 54 41 L 76 72" stroke="url(#akAccent)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- AI Neural Nodes -->
+  <circle cx="43" cy="27" r="4" fill="#FFFFFF"/>
+  <circle cx="73" cy="27" r="3.5" fill="#38BDF8"/>
+  <circle cx="76" cy="72" r="3.5" fill="#818CF8"/>
+  <circle cx="23" cy="72" r="3.5" fill="#06B6D4"/>
+  <circle cx="43" cy="72" r="3.5" fill="#3B82F6"/>
 </svg>

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Brain, Linkedin, Github, Mail, ArrowUp } from 'lucide-react';
+import { Linkedin, Github, Mail, ArrowUp } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
+import Logo from './Logo';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -13,9 +14,7 @@ export default function Footer() {
         
         {/* Left: Branding & Role */}
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-lg bg-cyan-950/60 border border-cyan-500/30 flex items-center justify-center">
-            <Brain className="w-5 h-5 text-cyan-400" />
-          </div>
+          <Logo className="w-10 h-10" />
           <div>
             <div className="font-bold text-white tracking-tight">
               {personalInfo.name}

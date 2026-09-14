@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Download, Brain, ExternalLink } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
 
+import Logo from './Logo';
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,11 +39,9 @@ export default function Navbar() {
           {/* Brand Logo */}
           <a 
             href="#home" 
-            className="flex items-center gap-2.5 group cursor-pointer"
+            className="flex items-center gap-3 group cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-blue-600/20 border border-cyan-500/30 flex items-center justify-center group-hover:border-cyan-400/70 transition-all">
-              <Brain className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
-            </div>
+            <Logo className="w-10 h-10" />
             <div className="flex flex-col">
               <span className="font-bold text-base sm:text-lg tracking-tight text-white group-hover:text-cyan-300 transition-colors">
                 Abd El Rahman Karkar
