@@ -25,8 +25,8 @@ export const personalInfo = {
   stats: [
     { label: "Data Records Processed", value: "50,000+" },
     { label: "MRI Scans Analyzed", value: "3,000+" },
-    { label: "Multimodal Samples", value: "2,000+" },
-    { label: "Peak Model Accuracy", value: "~92%" },
+    { label: "Multimodal Modalities", value: "3 (Img, Aud, Txt)" },
+    { label: "Peak Model Accuracy", value: "99.78%" },
   ]
 };
 
@@ -166,29 +166,30 @@ export const projectsData = [
     liveUrl: null
   },
   {
-    id: "ai-generated-content-detection",
-    title: "Multimodal AI-Generated Content Detection System",
+    id: "multimodal-deepfake-detection",
+    title: "Multimodal Deepfake Detection System",
     category: "Deep Learning",
-    tags: ["Deep Learning", "Multimodal AI", "Flask", "XGBoost", "Python", "Scikit-learn"],
+    tags: ["Deep Learning", "Computer Vision", "NLP", "Audio Processing", "Flask", "Transformers", "Python"],
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Multimodal AI detection pipeline capable of identifying synthetic media across images, audio, and text with real-time Flask API predictions.",
+    shortDescription: "An end-to-end AI system that detects AI-generated deepfake content across three modalities — images, audio, and text — unified in a single Flask web application.",
     keyMetrics: [
-      { label: "Accuracy", value: "~85%" },
-      { label: "Content Types", value: "Image, Audio, Text" },
-      { label: "Dataset Size", value: "2,000+ Samples" }
+      { label: "Audio Accuracy", value: "99.78%" },
+      { label: "Image Accuracy", value: "97.19%" },
+      { label: "Text Accuracy", value: "97.00%" }
     ],
     highlights: [
-      "Engineered a multimodal AI-generated content detection pipeline processing 2,000+ image, audio, and text samples, achieving approximately 85% classification accuracy.",
-      "Combined modality-specific feature extraction across 3 content types—image, audio, and text—within a unified classification workflow.",
-      "Packaged the multimodal detection pipeline behind a Flask API supporting real-time prediction across 3 input modalities: image, audio, and text."
+      "Image detection: Benchmarked EfficientNet-B0, ResNet50, and ConvNeXt Tiny; best model achieved 97.19% accuracy.",
+      "Audio detection: Extracted MFCC, Mel Spectrogram, and Chroma features; trained CNN, LSTM, and CNN-LSTM models, reaching 99.78% accuracy.",
+      "Text detection: Compared BiLSTM with Attention, CNN-BiGRU, and DistilBERT to distinguish human-written from AI-generated text, reaching 97% accuracy.",
+      "Unified web app: Users upload an image/audio file or enter text and instantly get a real/fake verdict."
     ],
     details: {
-      problem: "The rapid evolution of Generative AI tools (GANs, Diffusion, LLMs, Voice Cloners) has led to widespread deepfakes and automated disinformation. Isolated single-modality detectors fail when faced with heterogeneous digital media.",
-      solution: "Engineered a unified multimodal defense architecture that extracts modality-specific artifacts (spectral noise for audio, latent distributions for text, pixel residuals for imagery) with a centralized Flask API endpoint.",
-      dataset: "2,000+ curated synthetic and authentic samples spanning images, audio clips, and textual excerpts.",
-      technologies: ["Python", "TensorFlow", "Scikit-learn", "XGBoost", "Flask", "OpenCV", "NumPy"],
-      methodology: "Processed images via frequency analysis and spatial residuals, extracted acoustic MFCCs and spectral contrast, and quantified text perplexity. Combined features into an ensemble classifier.",
-      results: "Achieved ~85% overall multimodal accuracy with sub-second inference response across all three content modalities."
+      problem: "The proliferation of generative AI and deepfakes across visual media, voice clones, and synthetic text presents major societal and cybersecurity risks that single-modality detectors fail to combat effectively.",
+      solution: "Engineered a unified multimodal deepfake detection ecosystem combining state-of-the-art vision backbones, acoustic feature extractors, and transformer NLP models behind an intuitive real-time Flask web application.",
+      dataset: "Comprehensive multimodal benchmark datasets covering manipulated facial imagery, synthesized audio speech clones, and diverse AI-generated vs. human textual corpora.",
+      technologies: ["Python", "Flask", "EfficientNet-B0", "ResNet50", "ConvNeXt Tiny", "DistilBERT", "BiLSTM", "CNN-LSTM", "OpenCV", "Librosa"],
+      methodology: "Acoustic analysis via MFCC, Mel Spectrogram, and Chroma extraction with hybrid CNN-LSTM networks. Image forensics via transfer learning on EfficientNet/ConvNeXt. Linguistic classification comparing BiLSTM with Attention and DistilBERT.",
+      results: "Achieved 99.78% accuracy on audio deepfakes, 97.19% on manipulated images, and 97.00% on synthetic text detection with instant real/fake verdict in the unified web app."
     },
     githubUrl: "https://github.com/abdelrahmankarkar7-sys",
     liveUrl: null
