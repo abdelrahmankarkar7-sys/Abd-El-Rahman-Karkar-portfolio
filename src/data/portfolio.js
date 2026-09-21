@@ -1,5 +1,6 @@
 import profileImg from '../assets/profile.jpg';
 import deepfakeImg from '../assets/deepfake-project.png';
+import brainTumorImg from '../assets/brain-tumor-project.png';
 
 /**
  * Professional Portfolio Data Source for Abd El Rahman Mohamed Karkar
@@ -115,7 +116,7 @@ export const projectsData = [
     title: "Brain Tumor Detection Using Deep Learning",
     category: "Computer Vision",
     tags: ["Deep Learning", "Computer Vision", "TensorFlow", "Flask", "Python", "CNN"],
-    image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80",
+    image: brainTumorImg,
     shortDescription: "End-to-end deep learning classification pipeline detecting brain tumors from MRI scans with 92% accuracy, deployed as a real-time web application.",
     keyMetrics: [
       { label: "Accuracy", value: "~92%" },

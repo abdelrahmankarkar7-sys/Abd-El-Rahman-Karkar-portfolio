@@ -17,4 +17,7 @@ copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5f
 copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1789996453654.png" "public\assets\deepfake-project.png"
 copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1789996453654.png" "src\assets\deepfake-project.png"
 
-echo Done copying all assets including Deepfake Project Image!
+copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1789997952624.png" "public\assets\brain-tumor-project.png"
+copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1789997952624.png" "src\assets\brain-tumor-project.png"
+
+echo Done copying all assets including Brain Tumor Project Image!

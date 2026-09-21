@@ -9,6 +9,7 @@ const sourceImg = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-b
 const sourcePdf = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c/.user_uploaded/media_1788539343635.pdf';
 const sourceLogo = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c/.user_uploaded/media_1789410685783.png';
 const sourceDeepfake = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c/.user_uploaded/media_1789996453654.png';
+const sourceBrainTumor = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c/.user_uploaded/media_1789997952624.png';
 
 const destImgPublic = path.join(__dirname, 'public', 'assets', 'profile.jpg');
 const destImgSrc = path.join(__dirname, 'src', 'assets', 'profile.jpg');
@@ -18,6 +19,8 @@ const destLogoSrc = path.join(__dirname, 'src', 'assets', 'logo.png');
 const destFaviconPng = path.join(__dirname, 'public', 'favicon.png');
 const destDeepfakePublic = path.join(__dirname, 'public', 'assets', 'deepfake-project.png');
 const destDeepfakeSrc = path.join(__dirname, 'src', 'assets', 'deepfake-project.png');
+const destBrainTumorPublic = path.join(__dirname, 'public', 'assets', 'brain-tumor-project.png');
+const destBrainTumorSrc = path.join(__dirname, 'src', 'assets', 'brain-tumor-project.png');
 
 // Ensure destination directories exist
 fs.mkdirSync(path.join(__dirname, 'public', 'assets'), { recursive: true });
@@ -46,6 +49,12 @@ try {
     fs.copyFileSync(sourceDeepfake, destDeepfakePublic);
     fs.copyFileSync(sourceDeepfake, destDeepfakeSrc);
     console.log('✅ Deepfake project image successfully copied!');
+  }
+
+  if (fs.existsSync(sourceBrainTumor)) {
+    fs.copyFileSync(sourceBrainTumor, destBrainTumorPublic);
+    fs.copyFileSync(sourceBrainTumor, destBrainTumorSrc);
+    console.log('✅ Brain Tumor project image successfully copied!');
   }
 } catch (err) {
   console.error('Error copying assets:', err);
