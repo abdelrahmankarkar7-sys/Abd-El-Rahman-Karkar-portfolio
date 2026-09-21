@@ -57,8 +57,10 @@ karkar-portfolio/
 │   │
 │   └── components/
 │       ├── Navbar.jsx             # شريط التنقل الزجاجي + القائمة للموبايل + زر الـ CV
+│       ├── Logo.jsx               # لوجو AK ثلاثي الأبعاد المخصص
 │       ├── Hero.jsx               # قسم الهيرو مع خلفية Canvas عصبية وإطار الصورة
 │       ├── About.jsx              # نبذة عنك، إحصائيات حقيقية من الـ CV، وركائز التخصص
+│       ├── Services.jsx           # قسم الخدمات (Data Analysis, ML, DL/CV, AI Deployment)
 │       ├── Skills.jsx             # كروت المهارات المقسمة بدقة حسب مجالات الـ AI
 │       ├── Projects.jsx           # كروت المشاريع مع فلترة حسب التصنيف
 │       ├── ProjectModal.jsx       # نافذة منبثقة تفصيلية (Problem, Solution, Dataset, Results)

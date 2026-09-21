@@ -235,3 +235,60 @@ export const languagesData = [
   { language: "Arabic", proficiency: "Native" },
   { language: "English", proficiency: "Intermediate" }
 ];
+
+export const servicesData = [
+  {
+    id: "data-analysis",
+    number: "01",
+    title: "Data Analysis & Data Visualization",
+    description: "I transform raw data into meaningful insights through data cleaning, exploratory data analysis, and visualization to help businesses make data-driven decisions.",
+    features: [
+      "Data Cleaning & Preprocessing",
+      "Exploratory Data Analysis (EDA)",
+      "Data Visualization & Reporting",
+      "Identifying Trends, Patterns & Insights"
+    ],
+    tools: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"]
+  },
+  {
+    id: "machine-learning",
+    number: "02",
+    title: "Machine Learning Solutions",
+    description: "I develop machine learning models to solve real-world problems through predictive analytics, classification, and regression.",
+    features: [
+      "Classification & Regression Models",
+      "Predictive Analytics",
+      "Model Training & Evaluation",
+      "Feature Engineering & Model Optimization"
+    ],
+    tools: ["Python", "Scikit-learn", "Pandas", "NumPy"]
+  },
+  {
+    id: "deep-learning-cv",
+    number: "03",
+    title: "Deep Learning & Computer Vision",
+    description: "I develop deep learning models to analyze images and visual data, enabling AI-powered solutions for image recognition, classification, and object detection.",
+    features: [
+      "Image Classification & Recognition",
+      "Object Detection",
+      "CNN Model Development",
+      "Image Preprocessing & Augmentation",
+      "Model Training & Performance Evaluation"
+    ],
+    tools: ["Python", "TensorFlow", "Keras", "OpenCV", "NumPy"]
+  },
+  {
+    id: "deployment-web-apps",
+    number: "04",
+    title: "AI Model Deployment & Web Applications",
+    description: "I turn machine learning models into interactive web applications that allow users to explore data and get AI-powered predictions.",
+    features: [
+      "ML Model Integration",
+      "Interactive AI Applications",
+      "Data Upload & Prediction Interfaces",
+      "AI-Powered Dashboards"
+    ],
+    tools: ["Python", "Streamlit", "Scikit-learn"]
+  }
+];
+
