@@ -2,6 +2,7 @@ import profileImg from '../assets/profile.jpg';
 import deepfakeImg from '../assets/deepfake-project.png';
 import brainTumorImg from '../assets/brain-tumor-project.png';
 import bankRiskImg from '../assets/bank-risk-project.jpg';
+import smartParkingImg from '../assets/smart-parking-project.jpg';
 
 /**
  * Professional Portfolio Data Source for Abd El Rahman Mohamed Karkar
@@ -195,6 +196,38 @@ export const projectsData = [
       technologies: ["Python", "Flask", "EfficientNet-B0", "ResNet50", "ConvNeXt Tiny", "DistilBERT", "BiLSTM", "CNN-LSTM", "OpenCV", "Librosa"],
       methodology: "Acoustic analysis via MFCC, Mel Spectrogram, and Chroma extraction with hybrid CNN-LSTM networks. Image forensics via transfer learning on EfficientNet/ConvNeXt. Linguistic classification comparing BiLSTM with Attention and DistilBERT.",
       results: "Achieved 99.78% accuracy on audio deepfakes, 97.19% on manipulated images, and 97.00% on synthetic text detection with instant real/fake verdict in the unified web app."
+    },
+    githubUrl: "https://github.com/abdelrahmankarkar7-sys",
+    liveUrl: null
+  },
+  {
+    id: "smart-parking-iot",
+    title: "Smart Parking System (IoT)",
+    category: "IoT & Embedded",
+    tags: ["IoT", "ESP32", "Sensors", "Hardware Automation", "Web Dashboard", "Embedded Systems"],
+    image: smartParkingImg,
+    shortDescription: "An IoT-based smart parking management system that automates garage monitoring and control using embedded systems, with a live web dashboard.",
+    keyMetrics: [
+      { label: "Slot Tracking", value: "Real-Time" },
+      { label: "Microcontroller", value: "ESP32" },
+      { label: "Sensors Integrated", value: "IR, DHT11, Flame" }
+    ],
+    highlights: [
+      "Automatic slot detection: IR sensors track incoming and outgoing vehicles to detect available and occupied spots in real time.",
+      "Automated access control: Servo motors manage entry/exit gates, automatically blocking entry when the garage is full.",
+      "Smart lighting: Ultrasonic sensors trigger lighting based on vehicle movement to save energy.",
+      "Emergency safety system: Flame and DHT11 (temperature/humidity) sensors detect fire or overheating and automatically trigger an Emergency Mode, opening exit gates to speed up evacuation.",
+      "Live status display: LCD screen and LED indicators show garage status and alerts on-site.",
+      "Web dashboard: Real-time garage status monitoring, system control, and online slot reservation, built with HTML, CSS, and JavaScript.",
+      "Goal: Demonstrate an end-to-end embedded + web integration — combining real-time sensor data, hardware automation, and a live dashboard — to solve everyday parking congestion while prioritizing safety through automated emergency handling."
+    ],
+    details: {
+      problem: "Urban parking congestion leads to major traffic delays and wasted fuel, while conventional parking structures lack automated real-time vacancy tracking and intelligent emergency override protocols.",
+      solution: "Engineered an end-to-end embedded IoT parking system coordinating physical sensor detection, servo-driven gates, motion-triggered smart lighting, automated emergency evacuation opening, and a live interactive web dashboard.",
+      dataset: "Physical scale model telemetry, sensor data streams (IR, Ultrasonic, DHT11, Flame), and real-time microcontroller HTTP communication.",
+      technologies: ["ESP32", "IR Sensors", "Ultrasonic Sensor", "Servo Motors", "Flame Sensor", "DHT11", "LCD Display", "HTML5", "CSS3", "JavaScript", "C/C++"],
+      methodology: "Integrated multi-sensor interrupts on ESP32 to monitor vehicle flow and environmental risk. Coordinated servo gates and energy-saving lighting. Built a responsive web dashboard for remote slot reservation and live capacity telemetry.",
+      results: "Delivered a fully functional scale prototype and synchronized web dashboard providing zero-latency vacancy monitoring, automated full-capacity locking, and life-safety evacuation triggers."
     },
     githubUrl: "https://github.com/abdelrahmankarkar7-sys",
     liveUrl: null

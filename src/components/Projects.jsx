@@ -7,7 +7,7 @@ export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const categories = ['All', 'Computer Vision', 'Machine Learning', 'Deep Learning'];
+  const categories = ['All', 'Computer Vision', 'Machine Learning', 'Deep Learning', 'IoT & Embedded'];
 
   const filteredProjects = activeCategory === 'All' 
     ? projectsData 
@@ -21,13 +21,13 @@ export default function Projects() {
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/25 text-cyan-400 text-xs font-mono uppercase tracking-wider">
             <FolderGit2 className="w-3.5 h-3.5" />
-            <span>Applied AI Engineering</span>
+            <span>Applied AI & Engineering</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Real-world machine learning pipelines, deep learning architectures, and production Flask APIs directly documented in my CV.
+            Real-world machine learning pipelines, deep learning architectures, embedded IoT integrations, and production applications.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 items-stretch max-w-5xl mx-auto">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
@@ -57,14 +57,14 @@ export default function Projects() {
             >
               <div>
                 {/* Project Image & Category Pill */}
-                <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-[#111827]">
+                <div className="relative h-56 sm:h-64 w-full overflow-hidden bg-[#070B14] flex items-center justify-center border-b border-white/5">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+                    className="w-full h-full object-contain p-2 group-hover:scale-102 transition-transform duration-500 opacity-95 group-hover:opacity-100"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F1626] via-transparent to-black/40" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F1626]/80 via-transparent to-transparent pointer-events-none" />
                   
                   {/* Category Pill */}
                   <div className="absolute top-3 left-3">
@@ -73,10 +73,12 @@ export default function Projects() {
                     </span>
                   </div>
 
-                  {/* Accuracy Badge */}
+                  {/* Accuracy / Status Badge */}
                   <div className="absolute bottom-3 right-3">
                     <span className="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-cyan-950/90 text-cyan-400 border border-cyan-400/40 shadow-lg">
-                      {project.keyMetrics[0].value} Acc
+                      {project.keyMetrics[0].value.includes('%') 
+                        ? `${project.keyMetrics[0].value} Acc` 
+                        : project.keyMetrics[0].value}
                     </span>
                   </div>
                 </div>

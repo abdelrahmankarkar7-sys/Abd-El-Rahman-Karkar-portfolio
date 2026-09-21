@@ -23,4 +23,7 @@ copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5f
 copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1790000083243.jpg" "public\assets\bank-risk-project.jpg"
 copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1790000083243.jpg" "src\assets\bank-risk-project.jpg"
 
-echo Done copying all assets including Bank Risk Project Image!
+copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1790001266678.jpg" "public\assets\smart-parking-project.jpg"
+copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1790001266678.jpg" "src\assets\smart-parking-project.jpg"
+
+echo Done copying all assets including Smart Parking IoT Project Image!

@@ -11,6 +11,7 @@ const sourceLogo = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-
 const sourceDeepfake = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c/.user_uploaded/media_1789996453654.png';
 const sourceBrainTumor = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c/.user_uploaded/media_1789997952624.png';
 const sourceBankRisk = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c/.user_uploaded/media_1790000083243.jpg';
+const sourceSmartParking = 'C:/Users/MANSY/.gemini/antigravity/brain/c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c/.user_uploaded/media_1790001266678.jpg';
 
 const destImgPublic = path.join(__dirname, 'public', 'assets', 'profile.jpg');
 const destImgSrc = path.join(__dirname, 'src', 'assets', 'profile.jpg');
@@ -25,6 +26,8 @@ const destBrainTumorPublic = path.join(__dirname, 'public', 'assets', 'brain-tum
 const destBrainTumorSrc = path.join(__dirname, 'src', 'assets', 'brain-tumor-project.png');
 const destBankRiskPublic = path.join(__dirname, 'public', 'assets', 'bank-risk-project.jpg');
 const destBankRiskSrc = path.join(__dirname, 'src', 'assets', 'bank-risk-project.jpg');
+const destSmartParkingPublic = path.join(__dirname, 'public', 'assets', 'smart-parking-project.jpg');
+const destSmartParkingSrc = path.join(__dirname, 'src', 'assets', 'smart-parking-project.jpg');
 
 // Ensure destination directories exist
 fs.mkdirSync(path.join(__dirname, 'public', 'assets'), { recursive: true });
@@ -65,6 +68,12 @@ try {
     fs.copyFileSync(sourceBankRisk, destBankRiskPublic);
     fs.copyFileSync(sourceBankRisk, destBankRiskSrc);
     console.log('✅ Bank Risk project image successfully copied!');
+  }
+
+  if (fs.existsSync(sourceSmartParking)) {
+    fs.copyFileSync(sourceSmartParking, destSmartParkingPublic);
+    fs.copyFileSync(sourceSmartParking, destSmartParkingSrc);
+    console.log('✅ Smart Parking project image successfully copied!');
   }
 } catch (err) {
   console.error('Error copying assets:', err);

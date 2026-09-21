@@ -54,13 +54,13 @@ export default function ProjectModal({ project, onClose }) {
           
           {/* Project Image Showcase Banner */}
           {project.image && (
-            <div className="relative w-full h-48 sm:h-64 rounded-xl overflow-hidden border border-cyan-500/25 bg-[#0B0F19] shadow-xl">
+            <div className="relative w-full h-56 sm:h-80 rounded-xl overflow-hidden border border-cyan-500/25 bg-[#070B14] shadow-xl flex items-center justify-center p-2">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1626]/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1626]/40 via-transparent to-transparent pointer-events-none" />
             </div>
           )}
 
