@@ -20,4 +20,7 @@ copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5f
 copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1789997952624.png" "public\assets\brain-tumor-project.png"
 copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1789997952624.png" "src\assets\brain-tumor-project.png"
 
-echo Done copying all assets including Brain Tumor Project Image!
+copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1790000083243.jpg" "public\assets\bank-risk-project.jpg"
+copy /Y "C:\Users\MANSY\.gemini\antigravity\brain\c6739b5a-aba8-4f9b-bb48-9d7d5ff7071c\.user_uploaded\media_1790000083243.jpg" "src\assets\bank-risk-project.jpg"
+
+echo Done copying all assets including Bank Risk Project Image!

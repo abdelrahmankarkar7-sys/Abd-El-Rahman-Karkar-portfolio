@@ -1,6 +1,7 @@
 import profileImg from '../assets/profile.jpg';
 import deepfakeImg from '../assets/deepfake-project.png';
 import brainTumorImg from '../assets/brain-tumor-project.png';
+import bankRiskImg from '../assets/bank-risk-project.jpg';
 
 /**
  * Professional Portfolio Data Source for Abd El Rahman Mohamed Karkar
@@ -25,7 +26,7 @@ export const personalInfo = {
     email: "mailto:abdelrahmankarkar7@gmail.com",
   },
   stats: [
-    { label: "Data Records Processed", value: "50,000+" },
+    { label: "Data Records Processed", value: "6,000,000+" },
     { label: "MRI Scans Analyzed", value: "3,000+" },
     { label: "Multimodal Modalities", value: "3 (Img, Aud, Txt)" },
     { label: "Peak Model Accuracy", value: "99.78%" },
@@ -140,29 +141,31 @@ export const projectsData = [
     liveUrl: null
   },
   {
-    id: "banking-fraud-detection",
-    title: "Banking Fraud Detection & Loan Repayment Prediction",
+    id: "bank-financial-risk-management",
+    title: "Bank Financial Risk Management System",
     category: "Machine Learning",
-    tags: ["Machine Learning", "Scikit-learn", "XGBoost", "Feature Engineering", "Python", "Finance"],
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Robust financial ML system evaluating 50,000+ transactions to identify fraudulent activity and assess credit repayment probability.",
+    tags: ["Machine Learning", "XGBoost", "Random Forest", "Scikit-learn", "CTGAN", "SMOTE", "Finance", "Python"],
+    image: bankRiskImg,
+    shortDescription: "An end-to-end machine learning system built to help banks manage fraud detection in transactions and credit risk scoring for loan default.",
     keyMetrics: [
-      { label: "Accuracy", value: "~90%" },
-      { label: "Dataset Size", value: "50,000+ Records" },
-      { label: "Metrics", value: "Precision & Recall" }
+      { label: "Fraud Recall", value: "99.2%" },
+      { label: "Transactions", value: "6M+ Records" },
+      { label: "Fraud ROC-AUC", value: "0.995" }
     ],
     highlights: [
-      "Trained and validated fraud detection models using 50,000+ transaction records, achieving approximately 90% classification accuracy.",
-      "Addressed class imbalance and assessed fraud detection model performance using precision, recall, and F1-score to ensure reliable results beyond accuracy alone.",
-      "Built a loan repayment prediction component using financial data and applied feature engineering to prepare input variables for predictive modeling."
+      "Fraud Detection: Analyzed over 6 million financial transactions and addressed severe class imbalance using CTGAN to generate realistic synthetic fraud samples, achieving a fraud detection rate (Recall) of ~99% (99.2%).",
+      "Credit Risk Scoring: Built a model to predict the likelihood of a customer defaulting on a loan based on demographic and financial data, handling class imbalance with SMOTE.",
+      "Advanced feature engineering: Derived financial indicators such as credit-to-income ratio, balance differences pre/post-transaction, and amount-to-balance ratio.",
+      "Multi-model comparison: Trained and evaluated Decision Tree, Random Forest, and XGBoost for each module, selecting the best-performing model based on comprehensive metrics (Accuracy, Precision, Recall, F1, ROC-AUC).",
+      "Goal: Deliver a smart analytical tool that supports decision-making at two critical points in the banking workflow — flagging fraudulent transactions in real time and assessing a customer's creditworthiness before loan approval — reducing financial losses and improving overall risk management efficiency."
     ],
     details: {
-      problem: "Financial institutions lose billions to fraudulent transactions each year. Detecting illicit patterns among millions of legitimate transactions requires overcoming extreme data imbalance without increasing false alarms.",
-      solution: "Built a high-precision ML framework leveraging gradient-boosted decision trees (XGBoost) and specialized feature engineering to identify fraud patterns and forecast borrower loan repayment probabilities.",
-      dataset: "50,000+ financial transactions and applicant credit records featuring transactional attributes and temporal spending behaviors.",
-      technologies: ["Python", "Scikit-learn", "XGBoost", "Pandas", "NumPy", "Seaborn"],
-      methodology: "Addressed extreme class skew using balanced class weights and threshold tuning. Engineered transaction velocity and spending deviation metrics. Evaluated via ROC-AUC, precision-recall curves, and F1-score.",
-      results: "Attained ~90% accuracy with high precision and recall, minimizing financial exposure and unnecessary transaction declines."
+      problem: "Financial institutions lose billions to fraudulent transactions and bad debt defaults. Mitigating both risks requires high sensitivity to minority fraud events without unnecessarily disrupting legitimate customer banking flows.",
+      solution: "Engineered an end-to-end predictive modeling system supporting two critical banking workflow points: real-time transaction fraud monitoring and customer creditworthiness evaluation prior to loan approval.",
+      dataset: "Over 6 million financial banking transactions and comprehensive customer demographic/credit applicant records.",
+      technologies: ["Python", "Pandas", "Scikit-learn", "XGBoost", "Random Forest", "CTGAN (SDV)", "SMOTE (Imbalanced-learn)", "Joblib", "Seaborn", "Matplotlib"],
+      methodology: "Handled extreme class imbalance using CTGAN for synthetic fraud generation and SMOTE for credit default. Derived balance differences and debt-to-income ratios. Optimized decision thresholds (Threshold=0.1) to achieve maximum fraud capture.",
+      results: "Achieved a 99.2% fraud detection recall rate with 0.995 ROC-AUC on over 6M transactions, and 71.8% accuracy (0.668 ROC-AUC) on credit risk scoring, significantly cutting potential loan default exposure."
     },
     githubUrl: "https://github.com/abdelrahmankarkar7-sys",
     liveUrl: null
