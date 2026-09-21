@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Github, ExternalLink, CheckCircle, Database, Layers, BarChart2, ShieldCheck } from 'lucide-react';
+import { X, Github, ExternalLink, CheckCircle, Database, Layers, BarChart2, ShieldCheck, Linkedin } from 'lucide-react';
 
 export default function ProjectModal({ project, onClose }) {
   // Lock body scroll and handle ESC key
@@ -171,6 +171,17 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           <div className="flex items-center gap-3">
+            {project.linkedinUrl && (
+              <a
+                href={project.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0A66C2]/20 hover:bg-[#0A66C2]/35 text-white border border-[#0A66C2]/45 text-xs font-medium transition-all"
+              >
+                <Linkedin className="w-4 h-4 text-[#38BDF8]" />
+                <span>LinkedIn Post</span>
+              </a>
+            )}
             {project.githubUrl && (
               <a
                 href={project.githubUrl}

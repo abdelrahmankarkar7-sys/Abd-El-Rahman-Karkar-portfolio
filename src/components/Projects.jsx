@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, ExternalLink, ArrowUpRight, FolderGit2, Sparkles, Filter, CheckCircle2 } from 'lucide-react';
+import { Github, ExternalLink, ArrowUpRight, FolderGit2, Sparkles, Filter, CheckCircle2, Linkedin } from 'lucide-react';
 import { projectsData } from '../data/portfolio';
 import ProjectModal from './ProjectModal';
 
@@ -133,17 +133,32 @@ export default function Projects() {
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </button>
 
-                {project.githubUrl && (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg bg-[#111827] hover:bg-[#1B2337] border border-blue-500/20 text-gray-400 hover:text-white transition-all hover:scale-105"
-                    title="View Source on GitHub"
-                  >
-                    <Github className="w-4 h-4" />
-                  </a>
-                )}
+                <div className="flex items-center gap-2">
+                  {project.linkedinUrl && (
+                    <a
+                      href={project.linkedinUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0A66C2]/20 hover:bg-[#0A66C2]/35 border border-[#0A66C2]/45 text-cyan-200 hover:text-white text-xs font-medium transition-all hover:scale-105"
+                      title="View Post on LinkedIn"
+                    >
+                      <Linkedin className="w-3.5 h-3.5 text-[#38BDF8]" />
+                      <span>Post</span>
+                    </a>
+                  )}
+
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-lg bg-[#111827] hover:bg-[#1B2337] border border-blue-500/20 text-gray-400 hover:text-white transition-all hover:scale-105"
+                      title="View Source on GitHub"
+                    >
+                      <Github className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
               </div>
 
             </div>

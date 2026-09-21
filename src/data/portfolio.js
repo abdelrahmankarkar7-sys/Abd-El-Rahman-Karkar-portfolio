@@ -198,7 +198,8 @@ export const projectsData = [
       results: "Achieved 99.78% accuracy on audio deepfakes, 97.19% on manipulated images, and 97.00% on synthetic text detection with instant real/fake verdict in the unified web app."
     },
     githubUrl: "https://github.com/abdelrahmankarkar7-sys",
-    liveUrl: null
+    liveUrl: null,
+    linkedinUrl: "https://www.linkedin.com/posts/abd-el-rhaman-karkar_artificialintelligence-deepfakedetection-activity-7472611421684584448-cANG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF5d5IUBhmCttysX0MuRjJB6MAY9p6oCiIQ"
   },
   {
     id: "smart-parking-iot",
@@ -230,7 +231,8 @@ export const projectsData = [
       results: "Delivered a fully functional scale prototype and synchronized web dashboard providing zero-latency vacancy monitoring, automated full-capacity locking, and life-safety evacuation triggers."
     },
     githubUrl: "https://github.com/abdelrahmankarkar7-sys",
-    liveUrl: null
+    liveUrl: null,
+    linkedinUrl: "https://www.linkedin.com/posts/abd-el-rhaman-karkar_iot-esp32-embeddedsystems-activity-7464677737300103168-kgyR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF5d5IUBhmCttysX0MuRjJB6MAY9p6oCiIQ"
   }
 ];
 
