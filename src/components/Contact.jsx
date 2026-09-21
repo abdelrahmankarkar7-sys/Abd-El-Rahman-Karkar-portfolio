@@ -47,7 +47,7 @@ export default function Contact() {
             <span>Get In Touch</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Let's <span className="text-gradient">Work Together</span>
+            Contact <span className="text-gradient">Me</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
             I'm actively open to AI Engineering roles, client projects, and machine learning collaborations. Reach out directly or send a message below.

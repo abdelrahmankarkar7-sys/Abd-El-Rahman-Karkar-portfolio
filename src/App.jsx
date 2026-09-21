@@ -3,12 +3,11 @@ import ScrollProgress from './components/ScrollProgress';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Services from './components/Services';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
 import Education from './components/Education';
-import ResumeCTA from './components/ResumeCTA';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Services from './components/Services';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
@@ -26,12 +25,11 @@ export default function App() {
       <main className="flex-grow">
         <Hero />
         <About />
-        <Services />
-        <Skills />
-        <Projects />
-        <Experience />
         <Education />
-        <ResumeCTA />
+        <Skills />
+        <Experience />
+        <Services />
+        <Projects />
         <Contact />
       </main>
 
