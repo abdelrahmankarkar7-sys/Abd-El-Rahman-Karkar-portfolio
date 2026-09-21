@@ -52,6 +52,18 @@ export default function ProjectModal({ project, onClose }) {
         {/* Modal Scrollable Body */}
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
           
+          {/* Project Image Showcase Banner */}
+          {project.image && (
+            <div className="relative w-full h-48 sm:h-64 rounded-xl overflow-hidden border border-cyan-500/25 bg-[#0B0F19] shadow-xl">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1626]/80 via-transparent to-transparent pointer-events-none" />
+            </div>
+          )}
+
           {/* Title & Short Description */}
           <div className="space-y-2">
             <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">

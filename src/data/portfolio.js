@@ -1,4 +1,5 @@
 import profileImg from '../assets/profile.jpg';
+import deepfakeImg from '../assets/deepfake-project.png';
 
 /**
  * Professional Portfolio Data Source for Abd El Rahman Mohamed Karkar
@@ -170,7 +171,7 @@ export const projectsData = [
     title: "Multimodal Deepfake Detection System",
     category: "Deep Learning",
     tags: ["Deep Learning", "Computer Vision", "NLP", "Audio Processing", "Flask", "Transformers", "Python"],
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    image: deepfakeImg,
     shortDescription: "An end-to-end AI system that detects AI-generated deepfake content across three modalities — images, audio, and text — unified in a single Flask web application.",
     keyMetrics: [
       { label: "Audio Accuracy", value: "99.78%" },
